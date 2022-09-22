@@ -22,6 +22,12 @@ a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 978px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 /***************************************************************
 ***************** HEADER
 ***************************************************************/
@@ -31,6 +37,9 @@ header {
     padding-bottom: 0.75rem;
     color: #5f6368;
     border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
 }
 
 .logo {
@@ -70,4 +79,23 @@ header .list-item.active::after {
     background-color: #3367d6;
     bottom: calc(-0.75rem - 1.5px);
     left: 0;
+}
+
+/***************************************************************
+***************** MAIN
+***************************************************************/
+
+main h3 {
+    padding-top: 4rem;
+    font-size: 1.25rem;
+}
+
+main p {
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1.7;
+}
+
+main p a {
+    color: #3367d6;
 }
