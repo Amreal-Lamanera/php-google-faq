@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -85,17 +85,46 @@ header .list-item.active::after {
 ***************** MAIN
 ***************************************************************/
 
+main {
+    font-size: 0.75rem;
+    line-height: 1.7;
+}
+
+main h3,
+main h4 {
+    color: #3c4043;
+    font-weight: 500;
+    line-height: 1;
+}
+
 main h3 {
     padding-top: 4rem;
     font-size: 1.25rem;
 }
 
+main h4 {
+    padding-top: 3.5rem;
+    font-size: 1rem;
+}
+
 main p {
     padding-top: 1.5rem;
-    font-size: 0.75rem;
-    line-height: 1.7;
 }
 
 main p a {
     color: #3367d6;
+}
+
+main li {
+    padding: 0.75rem 0 0 0.75rem;
+    list-style-type: decimal;
+}
+
+ol.alpha,
+.alpha li {
+    list-style-type: lower-alpha;
+}
+
+ol.alpha {
+    padding-left: 1rem;
 }
