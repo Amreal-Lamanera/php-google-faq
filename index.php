@@ -70,6 +70,38 @@ $faqs = [
 
         </p>'
     ],
+];
+
+$links = [
+    'Introduzione' =>
+    [
+        'href' => '#nogo',
+        'active' => false
+    ],
+
+    'Norme sulla privacy' =>
+    [
+        'href' => '#nogo',
+        'active' => false
+    ],
+
+    'Termini di servizio' =>
+    [
+        'href' => '#nogo',
+        'active' => false
+    ],
+
+    'Tecnologie' =>
+    [
+        'href' => '#nogo',
+        'active' => false
+    ],
+
+    'Domande frequenti' =>
+    [
+        'href' => '#nogo',
+        'active' => true
+    ],
 ]
 ?>
 
@@ -94,36 +126,18 @@ $faqs = [
 
         <nav>
             <ul class="list-wrapper">
-                <li class="list-item">
-                    <a href="#nogo">
-                        Introduzione
-                    </a>
-                </li>
 
-                <li class="list-item">
-                    <a href="#nogo">
-                        Norme sulla privacy
-                    </a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#nogo">
-                        Termini di servizio
-                    </a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#nogo">
-                        Tecnologie
-                    </a>
-                </li>
-
-                <li class="list-item active">
-                    <a href="#nogo">
-                        Domande frequenti
-                    </a>
-                </li>
-
+                <?php
+                foreach ($links as $key => $value) {
+                ?>
+                    <li class="list-item <?= $value['active'] ? 'active' : '' ?>">
+                        <a href="<?= $value['href'] ?>">
+                            <?= $key ?>
+                        </a>
+                    </li>
+                <?php
+                }
+                ?>
             </ul>
         </nav>
     </header>
